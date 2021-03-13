@@ -1,0 +1,251 @@
+
+Module 2 Assignment 3 Output
+Devasena@DESKTOP-TJFCDHL MINGW64 ~/Module2Assign3 (master)
+$ git version
+git version 2.30.1.windows.1
+
+Devasena@DESKTOP-TJFCDHL MINGW64 ~/Module2Assign3 (master)
+$ git config --global user.username Devasenapl
+
+Devasena@DESKTOP-TJFCDHL MINGW64 ~/Module2Assign3 (master)
+$ git init
+Initialized empty Git repository in C:/Users/Devasena/Module2Assign3/.git/
+
+Devasena@DESKTOP-TJFCDHL MINGW64 ~/Module2Assign3 (master)
+$ touch main.txt
+
+Devasena@DESKTOP-TJFCDHL MINGW64 ~/Module2Assign3 (master)
+$ git branch Develop
+fatal: Not a valid object name: 'master'.
+
+
+Devasena@DESKTOP-TJFCDHL MINGW64 ~/Module2Assign3 (master)
+$ git remote add origin https://github.com/Devasenapl/module2assignment3.git
+
+Devasena@DESKTOP-TJFCDHL MINGW64 ~/Module2Assign3 (master)
+$ git branch Develop
+fatal: Not a valid object name: 'master'.
+
+Devasena@DESKTOP-TJFCDHL MINGW64 ~/Module2Assign3 (master)
+$ git remote -v
+origin  https://github.com/Devasenapl/module2assignment3.git (fetch)
+origin  https://github.com/Devasenapl/module2assignment3.git (push)
+
+Devasena@DESKTOP-TJFCDHL MINGW64 ~/Module2Assign3 (master)
+$ git add main.txt
+
+Devasena@DESKTOP-TJFCDHL MINGW64 ~/Module2Assign3 (master)
+$ git commit -m "adding main txt file"
+[master (root-commit) 117dd86] adding main txt file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 main.txt
+
+Devasena@DESKTOP-TJFCDHL MINGW64 ~/Module2Assign3 (master)
+$ git branch
+* master
+
+Devasena@DESKTOP-TJFCDHL MINGW64 ~/Module2Assign3 (master)
+$ git branch Develop
+
+Devasena@DESKTOP-TJFCDHL MINGW64 ~/Module2Assign3 (master)
+$ git branch F1
+
+Devasena@DESKTOP-TJFCDHL MINGW64 ~/Module2Assign3 (master)
+$ git branch f2
+
+Devasena@DESKTOP-TJFCDHL MINGW64 ~/Module2Assign3 (master)
+$ git checkout Develop
+Switched to branch 'Develop'
+
+Devasena@DESKTOP-TJFCDHL MINGW64 ~/Module2Assign3 (Develop)
+$ touch develop.txt
+
+Devasena@DESKTOP-TJFCDHL MINGW64 ~/Module2Assign3 (Develop)
+$ git checkout F1
+Switched to branch 'F1'
+
+Devasena@DESKTOP-TJFCDHL MINGW64 ~/Module2Assign3 (F1)
+$ touch f1.txt
+
+Devasena@DESKTOP-TJFCDHL MINGW64 ~/Module2Assign3 (F1)
+$ git checkout f2
+Switched to branch 'f2'
+
+Devasena@DESKTOP-TJFCDHL MINGW64 ~/Module2Assign3 (f2)
+$ touch f2.txt
+
+Devasena@DESKTOP-TJFCDHL MINGW64 ~/Module2Assign3 (f2)
+$ git checkout master
+Switched to branch 'master'
+
+Devasena@DESKTOP-TJFCDHL MINGW64 ~/Module2Assign3 (master)
+$ git add .
+
+Devasena@DESKTOP-TJFCDHL MINGW64 ~/Module2Assign3 (master)
+$ git commit -m "adding all branches and file"
+[master 8006f0a] adding all branches and file
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 develop.txt
+ create mode 100644 f1.txt
+ create mode 100644 f2.txt
+
+Devasena@DESKTOP-TJFCDHL MINGW64 ~/Module2Assign3 (master)
+$ git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 443 bytes | 55.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/Devasenapl/module2assignment3/pull/new/master
+remote:
+To https://github.com/Devasenapl/module2assignment3.git
+ * [new branch]      master -> master
+
+Devasena@DESKTOP-TJFCDHL MINGW64 ~/Module2Assign3 (master)
+$ git clone https://github.com/Devasenapl/module2assignment3.git
+Cloning into 'module2assignment3'...
+remote: Enumerating objects: 11, done.
+remote: Counting objects: 100% (11/11), done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 11 (delta 1), reused 5 (delta 0), pack-reused 0
+Receiving objects: 100% (11/11), done.
+Resolving deltas: 100% (1/1), done.
+
+Devasena@DESKTOP-TJFCDHL MINGW64 ~/Module2Assign3 (master)
+$ git push origin master
+Everything up-to-date
+
+Devasena@DESKTOP-TJFCDHL MINGW64 ~/Module2Assign3 (master)
+$ git checkout f2
+Switched to branch 'f2'
+
+Devasena@DESKTOP-TJFCDHL MINGW64 ~/Module2Assign3 (f2)
+$ git push origin f2
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'f2' on GitHub by visiting:
+remote:      https://github.com/Devasenapl/module2assignment3/pull/new/f2
+remote:
+To https://github.com/Devasenapl/module2assignment3.git
+ * [new branch]      f2 -> f2
+
+Devasena@DESKTOP-TJFCDHL MINGW64 ~/Module2Assign3 (f2)
+$ git pull
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), 1.23 KiB | 3.00 KiB/s, done.
+From https://github.com/Devasenapl/module2assignment3
+ * [new branch]      main       -> origin/main
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> f2
+
+
+Devasena@DESKTOP-TJFCDHL MINGW64 ~/Module2Assign3 (f2)
+$ git push --set-upstream origin f2
+Everything up-to-date
+Branch 'f2' set up to track remote branch 'f2' from 'origin'.
+
+Devasena@DESKTOP-TJFCDHL MINGW64 ~/Module2Assign3 (f2)
+$ git checkout F1
+Switched to branch 'F1'
+
+Devasena@DESKTOP-TJFCDHL MINGW64 ~/Module2Assign3 (F1)
+$ git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> F1
+
+
+Devasena@DESKTOP-TJFCDHL MINGW64 ~/Module2Assign3 (F1)
+$ git push --set-upstream origin F1
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'F1' on GitHub by visiting:
+remote:      https://github.com/Devasenapl/module2assignment3/pull/new/F1
+remote:
+To https://github.com/Devasenapl/module2assignment3.git
+ * [new branch]      F1 -> F1
+Branch 'F1' set up to track remote branch 'F1' from 'origin'.
+
+Devasena@DESKTOP-TJFCDHL MINGW64 ~/Module2Assign3 (F1)
+$ git pull origin F1
+From https://github.com/Devasenapl/module2assignment3
+ * branch            F1         -> FETCH_HEAD
+Already up to date.
+
+Devasena@DESKTOP-TJFCDHL MINGW64 ~/Module2Assign3 (F1)
+$ git push --set-upstream origin F1
+Everything up-to-date
+Branch 'F1' set up to track remote branch 'F1' from 'origin'.
+
+Devasena@DESKTOP-TJFCDHL MINGW64 ~/Module2Assign3 (F1)
+$ git checkout Develop
+Switched to branch 'Develop'
+
+Devasena@DESKTOP-TJFCDHL MINGW64 ~/Module2Assign3 (Develop)
+$ git pull origin Develop
+fatal: couldn't find remote ref Develop
+
+Devasena@DESKTOP-TJFCDHL MINGW64 ~/Module2Assign3 (Develop)
+$ git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> Develop
+
+
+Devasena@DESKTOP-TJFCDHL MINGW64 ~/Module2Assign3 (Develop)
+$ git push --set-upstream origin Develop
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'Develop' on GitHub by visiting:
+remote:      https://github.com/Devasenapl/module2assignment3/pull/new/Develop
+remote:
+To https://github.com/Devasenapl/module2assignment3.git
+ * [new branch]      Develop -> Develop
+Branch 'Develop' set up to track remote branch 'Develop' from 'origin'.
+
+Devasena@DESKTOP-TJFCDHL MINGW64 ~/Module2Assign3 (Develop)
+$ git pull origin Develop
+From https://github.com/Devasenapl/module2assignment3
+ * branch            Develop    -> FETCH_HEAD
+Already up to date.
+
+Devasena@DESKTOP-TJFCDHL MINGW64 ~/Module2Assign3 (Develop)
+$ git push --set-upstream origin Develop
+Everything up-to-date
+Branch 'Develop' set up to track remote branch 'Develop' from 'origin'.
+
+Devasena@DESKTOP-TJFCDHL MINGW64 ~/Module2Assign3 (Develop)
+$ git push develop.txt
+fatal: 'develop.txt' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Devasena@DESKTOP-TJFCDHL MINGW64 ~/Module2Assign3 (Develop)
+$
